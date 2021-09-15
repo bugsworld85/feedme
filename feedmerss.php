@@ -24,7 +24,7 @@ class FeedMe {
 		$atts    = shortcode_atts( [
 			'columns' => 3,
 			'wrapped' => true,
-			'posts' => 5,
+			'posts' => -1,
 			'url'   => 'https://www.konstructdigital.com/feed/',
 			'image_placeholder' => 'https://www.konstructdigital.com/wp-content/uploads/2019/12/cropped-konstruct-site-icon-270x270.png',
 		], $atts, 'feedme' );
@@ -38,7 +38,7 @@ class FeedMe {
 		);
 
 		foreach ( $rss->channel->item as $item ) {
-			if($index >= (int) $atts['posts']){
+			if((int) $atts['posts'] >= 0 && $index >= (int) $atts['posts']){
 				break;
 			}
 			$imageLink = self::get_image( (string) $item->link , $atts['image_placeholder']);
