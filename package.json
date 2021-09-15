@@ -1,0 +1,37 @@
+{
+  "name": "feedmerss",
+  "version": "1.0.0",
+  "description": "Wordpress RSS plugin shortcode",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugsworld85/feedme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress-plugin",
+    "wordpress-rss",
+    "rss",
+    "post"
+  ],
+  "author": "Jovanni G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bugsworld85/feedme/issues"
+  },
+  "homepage": "https://github.com/bugsworld85/feedme#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.31",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.41.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

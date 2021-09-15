@@ -1,0 +1,12 @@
+{
+    "name": "bugsworld85/feedme",
+    "require": {
+        "nesbot/carbon": "^2.53"
+    },
+    "authors": [
+        {
+            "name": "Jovanni G",
+            "email": "bugsworld85@gmail.com"
+        }
+    ]
+}
